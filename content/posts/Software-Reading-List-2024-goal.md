@@ -9,3 +9,4 @@ They include:
 1. Clean Code by Robert Martin (Uncle Bob)
 2. Clean Architecture by Robert Martin (Uncle Bob)
 3. The Book (for rustaceans) if you catch my drift.
+4. Crafting Interpreters (https://craftinginterpreters.com/introduction.html).
