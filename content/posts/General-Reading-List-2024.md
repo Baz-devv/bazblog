@@ -1,5 +1,5 @@
 ---
-title: "General Reading List 024"
+title: "General Reading List 2024"
 date: 2024-01-17T18:08:52+03:00
 
 ---
