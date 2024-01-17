@@ -3,7 +3,7 @@ title: "Clean Code"
 date: 2024-01-09T14:57:35+03:00
 
 ---
-![Clean code uncle bob](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.ca%2FClean-Code-Handbook-Software-Craftsmanship%2Fdp%2F0132350882&psig=AOvVaw0T03zF5m9rR7WdV8n1qcQ7&ust=1705618821024000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIjvkrTD5YMDFQAAAAAdAAAAABAD)
+[![Clean code uncle bob](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.ca%2FClean-Code-Handbook-Software-Craftsmanship%2Fdp%2F0132350882&psig=AOvVaw0T03zF5m9rR7WdV8n1qcQ7&ust=1705618821024000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIjvkrTD5YMDFQAAAAAdAAAAABAD)]
 
 Link: https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
 
