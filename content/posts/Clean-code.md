@@ -74,10 +74,13 @@ through a series of transformations until it is an elegant coded system.
 The author gave us a peak into what programming pioneers and experts think about clean code, here are a few that stuck with me:
 
 Bjarne Stroustrup:
-==I like my code to be elegant and efficient. The logic should be straightfoward to make it hard for bugs to hide, the dependencies minimal to ease maintenance, error-handling complete according to an articulated
-strategy, and perfomance close to optimal so as not to tempt people to make the code messy with unprincipled optimizations. Clean code does one thing well.==
+
+`I like my code to be elegant and efficient. The logic should be straightfoward to make it hard for bugs to hide, the dependencies minimal to ease maintenance, error-handling complete according to an articulated
+strategy, and perfomance close to optimal so as not to tempt people to make the code messy with unprincipled optimizations. Clean code does one thing well.`
 
 Grady Booch:
-==Clean code is simple and direct. Clean codenever obscures the designer's intent but rather is full of crisp abstractions and straightfoward lines of control.==
 
-But personally the best description of what clean code that always sticks with me is =="...Clean code always looks like it was written by someone who cares..."==
+`Clean code is simple and direct. Clean codenever obscures the designer's intent but rather is full of crisp abstractions and straightfoward lines of control.`
+
+But personally the best description of what clean code ought to look like that has always stuck with me is `...Clean code always looks like it was written by someone who cares...` by Michael Feathers.
+
