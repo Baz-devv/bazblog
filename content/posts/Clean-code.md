@@ -84,3 +84,35 @@ Grady Booch:
 
 But personally the best description of what clean code ought to look like that has always stuck with me is `...Clean code always looks like it was written by someone who cares...` by Michael Feathers.
 
+
+## CHAPTER 2: MEANINGFUL NAMES.
+
+Here are the rules mentioned in the book for defining names, I won't go into detail as the purpose here is to summarize:
+
+1. Use intention revealing names.
+
+2. Avoid disinformation.
+
+3. Make meaningful distinctions.
+
+4. Use pronounceable names.
+
+5. Use searchable names.
+
+6. Avoid encodings.
+
+7. Avoid mental mapping.
+
+8. Don't be cute.
+
+9. Pick one word per concept.
+
+10. Don't pun.
+
+11. Use solution domain names.
+
+12. Use problem domain names.
+
+13. Add meaningful context.
+
+14. Don't add gratuitous context.
