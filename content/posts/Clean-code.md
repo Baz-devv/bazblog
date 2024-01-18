@@ -149,14 +149,14 @@ Code ought to read like a top-down narrative, remember that 'well-written prose'
 Every function should be followed by those at the next level of abstraction so that we can read the program, descending one level of abstraction at a time.
 
 #### Use Descriptive Names.
-As already pointed out, meaningful are a godsend in programming.
+As already pointed out, meaningful names are a godsend in programming.
 
 The smaller and more focused a function is, the easier it is to choose a descriptive name.
 
 #### Function Arguments.
 The ideal number of arguments for a function is niladic. Next comes monadic followed by dyadic.
 
-Triadic functions should be avoidedwhere possible.
+Triadic functions should be avoided where possible.
 
 #### Common Monadic Forms.
 There are 2 very common reasons to pass a single argument into a function:
@@ -194,5 +194,5 @@ Functions should do one thing. Error handling is one thing. Thus, a function tha
 #### How do you write perfect functions?
 The only way is to first write bad functions, then re-write and refactor them until you have a clean function. You probably won't get it right at the first try.
 
-	`Master programmers think of systems as stories to be told rather than programs to be written.`
+`Master programmers think of systems as stories to be told rather than programs to be written.`
 
