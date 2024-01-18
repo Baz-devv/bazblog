@@ -116,3 +116,83 @@ Here are the rules mentioned in the book for defining names, I won't go into det
 13. Add meaningful context.
 
 14. Don't add gratuitous context.
+
+## CHAPTER 3: FUNCTIONS.
+
+What is it that makes a function easy to read and understand? How can we make a function communicate its intent?
+
+Well here are a few guidelines:
+
+#### Small!
+The first rule of functions is that they should be small. The second rule is that they should be smaller than that.
+Not set in stone but it's just a good idea not to have your functions more than 20 lines long if you've had to read bad code you definitely agree with this.
+
+#### Blocks and Indenting.
+Functions shouldn't be large enough to hold nested structures. The indent level of a function should not be more than 2.
+
+#### Do One Thing.
+`Functions should do one thing. They should do it well. They should do it only.`
+
+If a function does things that are one level below the stated name of the function then it's doing one thing.
+
+*A way of knowing whether a function is doing more than 'one thing' is if you can extract another function from itwith a name that is not merely a restatement of its implementation.
+
+#### Sections With Functions.
+Functions that do one thing cannot be reasonably divided into sections.
+
+#### One Level Of Abstraction Per Function.
+Make sure that the statements within your functions are all at the same level of abstraction.
+
+#### Reading Code From Top To Bottom: `The Stepdown Rule`.
+Code ought to read like a top-down narrative, remember that 'well-written prose' description?
+
+Every function should be followed by those at the next level of abstraction so that we can read the program, descending one level of abstraction at a time.
+
+#### Use Descriptive Names.
+As already pointed out, meaningful are a godsend in programming.
+
+The smaller and more focused a function is, the easier it is to choose a descriptive name.
+
+#### Function Arguments.
+The ideal number of arguments for a function is niladic. Next comes monadic followed by dyadic.
+
+Triadic functions should be avoidedwhere possible.
+
+#### Common Monadic Forms.
+There are 2 very common reasons to pass a single argument into a function:
+1. you may be asking a question about that argument.
+
+2. you may be operating on that argument.
+
+#### Dyadic Functions.
+A function with two arguments is harder to understand than a monadic function.
+
+#### Triadic Functions.
+Abundantly difficult than dyads. The issues of ordering, pausing and ignoring are more than doubled.
+
+#### Argument Objects.
+When a function needs more than 2 arguments, it's clear that some of those arguments need to be wrapped in a class of their own.
+
+#### Output Arguments.
+In general, output arguments should be avoided. If your function must change the state of something, have it change the state of its owning object.
+
+#### Prefer Exceptions To Returning Error Codes.
+Returning error codes from command functions is a subtle violation of command query separation.
+
+It promotes commands being used as expressions in the predicates of `if` statements.
+
+#### Extract `try/catch` Blocks.
+`try/catch` blocks are ugly, let's get that out of the way first.
+
+They confuse the structure of the code and and mix error processing with normal processing.
+
+It's therefore better the bodies of `try/catch` blocks out into functions of their own.
+
+#### Error Handling Is One Thing.
+Functions should do one thing. Error handling is one thing. Thus, a function that handles errors should do nothing else.
+
+#### How do you write perfect functions?
+The only way is to first write bad functions, then re-write and refactor them until you have a clean function. You probably won't get it right at the first try.
+
+	`Master programmers think of systems as stories to be told rather than programs to be written.`
+
