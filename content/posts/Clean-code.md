@@ -296,5 +296,5 @@ The connection between a comment and the code it describes should be obvious. Th
 
 `IT IS A PITY WHEN A COMMENT NEEDS ITS OWN EXPLANATION.`
 
-##### 1.Function Headers.
+##### 16.Function Headers.
 Short functions don't need much description. A well chosen name for a small function that does one thing is usually better than a comment header. 
