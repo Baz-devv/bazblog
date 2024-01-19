@@ -196,3 +196,105 @@ The only way is to first write bad functions, then re-write and refactor them un
 
 `Master programmers think of systems as stories to be told rather than programs to be written.`
 
+## CHAPTER 4: COMMENTS.
+
+`"Don't comment bad code - rewrite it" Brian Kernighan`
+
+The proper use of comments is to compensate for our failure to express ourselves in code.
+
+Comments are a necessary evil. In a perfect universe, code should be clear and expressive that it doesn't need comments.
+
+Always keep in mind though that the truth can only be found in one place; `the code`.
+
+#### Comments Do Not Make Up For Bad Code.
+Clear and expressive code with few comments is far superior to cluttered and complex code with lots of comments.
+
+Rather than spending time writing comments explaining your bad code, spend it cleaning the mess.
+
+#### Explain Yourself In Code.
+It takes only a few seconds of thought to explain most of your intent in code. In many cases, it's simply a matter of creating a function that says the same thing as the comment you want to write.
+
+#### Good Comments.
+Some comments are good but keep in mind that the only truly good comment is the comment you found a way not to write.
+
+Here are a few reasons for writing comments and the laws they should abide by:
+
+##### 1.Legal Comments.
+Sometimes our corporate coding standards force us to write certain commentsfor legal reasons.
+
+##### 2.Informative Comments.
+It is SOMETIMES useful to provide basic information with a comment.
+
+##### 3.Explanations Of Intent.
+Sometimes a comment goes beyond just useful information about the implementation and provides the intent behind a decision.
+
+##### 4.Clarification.
+Sometimes it's just helpful to translate the meaning of some obscure argument or return value into something that's readable. It's better to find a way to make that argument or return value clear in its
+own right; but when it's part of the standard library or in code you can't alter then a helpful clarifying comment can be useful.
+
+##### 5.Warning Of Consequence.
+We may use comments to warn other programmers about certain consequences.
+
+##### 6.TODO Comments.
+It's reasonable to leave 'To Do' notes in the form of `//TODO` comments.
+
+##### 7.Amplification.
+A comment may be used to amplify the importance of something that may otherwise seem inconsequential.
+
+#### Bad Comments.
+Most comments fall into this category. Usually they are crutches for poor code or justifications for insufficient decisions amounting to little more than the programmer talking to himself.
+
+What constitutes a bad comment?
+
+##### 1.Mumbling.
+If you decide to write a comment, then spend the time necessary to make sure it is the best you can write anything less is just negligence and bad programming.
+
+##### 2.Redundant Comments.
+Don't write comments that obscure the code.
+
+##### 3.Misleading Comments.
+Sometimes with all the best intentions, a programmer makes a statement in his comments that isn't precise enough to be accurate.
+
+##### 4.Mandated Comments.
+It is plain silly to have a rule that every function or variable must have a comment. Such restrictions cause comments to clutter up code, propagate lies and lend to general confusion and disorganization.
+
+##### 5.Journal Comments.
+Journal comments should be removed or they'll add up to one giant mess.
+
+##### 6.Noise Comments.
+Sometimes you'll see comments that are nothing but noise. They restate the obvious and provide no new information.
+
+Replace the temptation to create noise with the determination to clean your code.
+
+##### 7.Don't Use A Comment When You Can Use A Function Or A Varable.
+
+##### 8.Position Markers.
+`////////////` are really an eyesore.
+
+They are clutter that should be eliminated.
+
+##### 9.Closing Brace Comments.
+Don't put comments at the end of closing braces.
+
+##### 10.Attributions And Bylines.
+Just don't do it.
+
+##### 11.Commented-out Code.
+Instead of commenting-out code, delete it.
+
+##### 12.HTML Comments.
+HTML in source code comments is an abomination.
+
+##### 13.Nonlocal Information.
+If you must write a comment, make sure it describes the code it appears near. Don't offer systemwide information in the context of a local comment.
+
+##### 14.Too Much Information.
+Don't put interesting historical discussions or irrelevant descriptions of details into your comments.
+
+##### 15.Inpbvious Behaviour.
+The connection between a comment and the code it describes should be obvious. The purpose of a comment is to explain code that does not explain itself.
+
+`IT IS A PITY WHEN A COMMENT NEEDS ITS OWN EXPLANATION.`
+
+##### 1.Function Headers.
+Short functions don't need much description. A well chosen name for a small function that does one thing is usually better than a comment header. 
