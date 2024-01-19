@@ -9,5 +9,7 @@ To spice it up I've set myself the 24-book challenge for this year.
 
 1. Astropysics For People In A Hurry by Neil DeGrasse Tyson.
 
+[![Astrophysics For People In A Hurry](https://www.libertybooks.com/image/cache/catalog/9780393609394-640x996.jpg?q6)]
+
 Link: https://www.amazon.com/Astrophysics-People-Hurry-deGrasse-Tyson/dp/0393609391
 
