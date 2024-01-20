@@ -297,4 +297,46 @@ The connection between a comment and the code it describes should be obvious. Th
 `IT IS A PITY WHEN A COMMENT NEEDS ITS OWN EXPLANATION.`
 
 ##### 16.Function Headers.
-Short functions don't need much description. A well chosen name for a small function that does one thing is usually better than a comment header. 
+Short functions don't need much description. A well chosen name for a small function that does one thing is usually better than a comment header.
+
+## CHAPTER 5:FORMATTING.
+You should take care that your code is nicely formatted. You should choose a set of simple rules that govern the format of your code and consistently apply those rules.
+
+#### The Purpose Of Formatting.
+Coding style and readablity set precedents that continue to affect maintainability and extensibility long after the original code has been changed beyond recognition.
+
+#### i.Verical Formatting.
+How big should a source file be?
+
+##### 1.The Newspaper Metaphor.
+Our source code ought to be like a newspaper. The name should be simple but explanatory, sufficient to tell us whether we are in the right module or not.
+
+The top most parts of the source file should provide the high-level concpts and algorithms. Details should increase as we move downward until at the end we find the lowest level function 
+and details.
+
+##### 2.Vertical Openness Between Concepts.
+Each line of code represents an expression or a clause and each group of lines represents a complete thought. Those thoughts should be separated from each other with blank lines.
+
+##### 3.Vertical Density.
+If openness separates concepts, then density implies close association.
+
+Lines of code that are tightly related should appear vertically dense.
+
+##### 4.Vertical Distance.
+Concepts that are closely related should be kept vertically close to each other.
+
+For concepts vertically related, their vertical separation should be a measure of how important each is to the understanding of the other.
+
+Variable Declarations: Variables should be declared as close to their usage as possible.
+
+Instance Variables: Declared at the top of the class.
+
+Dependant Functions: If one function calls another, they should be vertically close and the caller above the callee, giving the program a natural flow.
+
+Conceptual Affinity: Certain bits of code want to be near other bits, they have a certain conceptual afinity. The stronger that affinity the less vertical distance there should be between them.
+
+##### 5.Vertical Ordering.
+Function call dependencies should point in the downward direction i.e, a function that is called should be below a function that does the calling.
+
+#### ii.Horizontal Formatting.
+How wide should a line be? Generally keep them short.
