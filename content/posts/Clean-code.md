@@ -385,3 +385,20 @@ data in a database into objects in the application code.
 Are special forms of DTOs.
 
 Are data structures with public variables; but typically have navigational methods like `save` and `find`.
+
+## CHAPTER 7: ERROR HANDLING.
+Techniques and considerations you can use to write code that is both clean and robust - code that handles errors with grace and style:
+
+1. Use exceptions rather than return codes.
+
+2. Write your `try-catch-finally` statement first.
+
+3. Provide context with exceptions.
+
+4. Define exception classes in terms of a callers needs.
+
+5. Define the normal flow.
+
+6. Don't return `NULL`.
+
+7. Don't pass `NULL`.
