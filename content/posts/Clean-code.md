@@ -299,7 +299,7 @@ The connection between a comment and the code it describes should be obvious. Th
 ##### 16.Function Headers.
 Short functions don't need much description. A well chosen name for a small function that does one thing is usually better than a comment header.
 
-## CHAPTER 5:FORMATTING.
+## CHAPTER 5: FORMATTING.
 You should take care that your code is nicely formatted. You should choose a set of simple rules that govern the format of your code and consistently apply those rules.
 
 #### The Purpose Of Formatting.
@@ -340,3 +340,48 @@ Function call dependencies should point in the downward direction i.e, a functio
 
 #### ii.Horizontal Formatting.
 How wide should a line be? Generally keep them short.
+
+## CHAPTER 6: OBJECTS AND DATA STRUCTURES.
+
+#### Data Abstraction.
+We don't want to expose the details of our data rather, we want to express our data in abstract terms.
+
+#### Data/Object Anti-Symmetry.
+Objects hide their data behind abstractions and expose functions that operate on that data.
+
+Data structures expose their data and have no meaningful functions.
+
+`Procedural code (code using data structures) makes it easy to add new functions without changing the existing data structures. Object Oriented code makes it easy to add new classes without changing 
+existing functions.`
+
+The complement is also true:
+
+`Procedural code makes it hard to add new data structures because all the functions must change. OO code makes it hard to add new functions because all the classes must change.`
+
+The idea that everything is an 'object' is a myth. Sometimes you really do want simple data structures with procedures operating on them.
+
+#### The 'Law of Demeter'.
+The `Law of Demeter` is a heuristic that says a module should not know about the innards of the object it manipulates.
+
+Objects hide their data and expose operations. This means that an object should not expose its internal structure through accessors because to do so is to expose its internal structure.
+
+More precisely, the law says that a method `f` of a class `C` should only call the methods of these:
+
+-C
+
+-An object created by `f`
+
+-An object held in an instance varible of `C`
+
+the method should NOT invoke methods on objects that are returned by any of the allowed functions.
+
+#### Data Transfer Objects.
+The quintessential form of a data structure is a class with public variables and no fuctions. This is called a Data Transfer Object (DTO).
+
+DTOs are very useful especially when communicating with databases or parsing messages from sockets and so on. They often become the first in a series of translation stages that convert raw
+data in a database into objects in the application code.
+
+##### Active Records.
+Are special forms of DTOs.
+
+Are data structures with public variables; but typically have navigational methods like `save` and `find`.
