@@ -402,3 +402,62 @@ Techniques and considerations you can use to write code that is both clean and r
 6. Don't return `NULL`.
 
 7. Don't pass `NULL`.
+
+## CHAPTER 8: BOUNDARIES.
+`We seldom control all the software in our systems` therfore we need to know how to cleanly integrate foreign code with our own.
+
+#### Using Third Party Code.
+Don't pass interfaces at a boundary around your system.
+
+If you use a boundary interface, keep it inside the class, or close family of classes where it's used. Avoid returning it from, or accepting it as argument to public API's.
+
+#### Exploring And Learning Boundaries.
+Third-party code helps us to get more functionality delivered in less time. It is therefore in our best interest to write tests for the third-party code we use.
+
+Learning and integrating third-party code is hard so the best way to approach them would be to write tests to explore our understanding of the third-party code. Such tests are called `Learning tests`.
+
+In learning tests we call the third party API as we expect to use it in our program, we are essentially doing controlled experiments that check our understanding of that API, they focus on what we want from the API.
+
+#### Learning Tests Are Better Than Free.
+Learning tests are precise experiments that help increase our understanding as you have to learn an API, writing these tests is an easy and isolated way to get that knowledge.
+
+Learning tests have a positive return on investment. When there's a new release of the third-party package, we run the learning tests to see whether there are behavorial differences.
+
+#### Clean Boundaries.
+Change is one of those things that happen at boundaries. Good software designs accomodate change without huge investments and rework.
+
+Code at the boundaries needs clear separation and tests that define expectations. We should avoid letting too much of our code know about the third-party particulars
+
+Manage third-party boundaries by having very few places in the code that refer to them, this promotes internally consistent usage across the boundary and has fewer maintenance points when the third-party code changes.
+
+## CHAPTER 9: UNIT TESTS.
+
+#### The 3 Laws Of TDD.
+`First Law`: You may not write production code until you have written a failing unit test.
+
+`Second Law`: You may not write more of a unit test than is sufficient to fail.
+
+`Third Law`: You may not write more production code than is sufficient to pass the currently failing tests.
+
+#### Clean Tests.
+What makes a test clean? Readability.
+
+What makes tests readable? Clarity. Simplicity. Density of expression.
+
+#### One Assertion Per Test.
+
+##### Single Concept Per Test.
+Test a single concept in each test function.
+
+The best rule is; Minimize the number of asserts per concept and test just one concept per test function.
+
+#### F.I.R.S.T
+`Fast` -> Tests should be fast, run very quickly.
+
+`Independent` -> Tests shouldn't depend on each other. One test should not set up the conditions for the next test.
+
+`Repeatable` -> Tests should be repeatable in any environment.
+
+`Self-Validating` -> Tests should have a boolean output, either they pass or fail.
+
+`Timely` -> Tests need to be written in a timely fashion. Should be written before the production code that makes them pass.
