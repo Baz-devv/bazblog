@@ -568,3 +568,39 @@ too long for industry to wait, and some standards lose touch with the real needs
 A good DSL minimizes the communication gap between a domain concept and the code that implements it.
 
 DSL's, when used effectively, raise the abstraction level above code idioms and design patterns. They allow the programmer to reveal the intent of the code at the appropriate level of abstraction.
+
+## CHAPTER 12: EMERGENCE.
+
+#### Getting Clean via Emergent Design.
+Kent Beck's 4 rules of `'Simple Design'` help in creating well-designed software.
+
+The rules are; in order of importance:
+
+1. Runs all the tests.
+
+2. No duplication.
+
+3. Expresses the intent of the programmer.
+
+4. Minimize the number of classes and methods.
+
+#### Simple Design Rule 1: Runs All The Tests.
+A simple and obvious rule that says we need to have tests and run them continously impacts our systems adherence to the primary OOP goals of low coupling and high cohesion. Writing tests leads to better design.
+
+Systems that aren't tested aren't verifiable. A system that cannot be verified should never be deployed.
+
+#### Simple Design Rule 2-4: Refactoring.
+Once we have tests, we are empowered to keep our code and classes clean. We do this by incrementally refactoring the code.
+
+During this refactoring step, we can apply anything from the entire body of knowledge about good software design.
+
+#### No Duplication.
+Duplication is the primary enemy of a well-designed system.. It represents additional work, risks and unnecessary complexity.
+
+#### Expressive.
+Stick to the rules layed out in this book such as meaningful names and small functions and your code will express your intent. Remember the majority of the cost of a software project is in long-term maintenance.
+
+#### Minimal Classes And Methods.
+Each of the previous rules can be taken too far. In an effort to make classes smaller, we might create too many tiny classes which is what this rule is against. We need to keep our class and function counts low.
+
+Kep in mind this rule's hierarchy in priority. Last.
