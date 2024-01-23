@@ -461,3 +461,48 @@ The best rule is; Minimize the number of asserts per concept and test just one c
 `Self-Validating` -> Tests should have a boolean output, either they pass or fail.
 
 `Timely` -> Tests need to be written in a timely fashion. Should be written before the production code that makes them pass.
+
+## CHAPTER 10: CLASSES.
+
+#### Class Organization.
+Classes should begin with a list of variables. Public stati constants if any should come first. Then private static variables followed by private instance variables.
+
+Public functions should follow the list of variables. Private utilities called by a public function should be put right after the public function itself. This follows the step-down rule and helps the program read like a 
+newspaper article.
+
+#### Classes Should Be Small.
+The first rule of classes is they ought to be small.
+
+As with functions, smaller is the primary rule when it comes to designing classes.
+
+How small should they be then? With functions we measured size by counting physical lines but with classes we count `responsibilities`.
+
+The name of a class should describe what responsibilities it fulfils. Naming is the first way of helping determine class size.
+
+##### Single Responsibility Principle (S.R.P).
+SRP states that a class/module should have one and only one reason to change.
+
+This principle gives us both a definition of responsibility and guidelines to class size.
+
+A system should be composed of many small classes. Each small class encapsulates a single responsibility, has a single reason to change and collaborates with a few others to achieve the desired system behaviour.
+
+##### Cohesion.
+Classes should have a low number of instance variables.
+
+Each of the methods of a class should manipulate one or more of those variables. The more variables a method manipulates, the more cohesive that method is to its class.
+
+Maintaining cohesion results in many small changes.
+
+#### Organizing For Change.
+For most systems, change is continual. In a clean system, we organize our classes so as to reduce the risk of change.
+
+In an ideal system, we incorporate new features by extending the system not by making modifications to existing code.
+
+##### Isolating From Change.
+Needs will change and its therefore inevitable that code will change.
+
+In OOP there are concrete classes which contain implementation code and abstract classes which represent concepts only.
+
+A client class depending on concrete details is at risk when those details change. To mitigate this, we can introduce interfaces and abstract classes to help isolate the impact of those details.
+
+## CHAPTER 11: SYSTEMS.
