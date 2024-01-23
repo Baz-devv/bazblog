@@ -506,3 +506,65 @@ In OOP there are concrete classes which contain implementation code and abstract
 A client class depending on concrete details is at risk when those details change. To mitigate this, we can introduce interfaces and abstract classes to help isolate the impact of those details.
 
 ## CHAPTER 11: SYSTEMS.
+`Complexity kills. It sucks the life out of developers. It makes products difficult to plan, build and maintain.`
+
+Software teams can be organized as cities are, cities work because they have evolved appropriate levels of abstraction and modularity that makes it possible for individuals and the `components` they manage
+to work effectively even understanding the big picture.
+
+Although software teams are often organized like that too, the systems they work on often don't have the same separation of concerns and levels of abstraction.
+
+Clean code helps us achieve this at the lower levels of abstraction, but how do you stay clean at higher levels of abstraction, the system level?
+
+#### Separate Constructing A System From Using It.
+Construction is a very different process from use.
+
+`Software systems should separate the startup process, when the application objects are constructed and the dependencies are 'wired' together, from the runtime logic that takes over after startup.`
+
+If we are dilligent about building well-formed and robust systems, we should never let little, convenient idioms (`LAZY INITIALIZATION`) lead to modularity breakdown.
+
+We should modularize the startup process separately from the normal runtime logic and make sure we have a global, consistent strategy for resolving our major dependencies.
+
+##### Separation Of Main.
+One way to separate construction from use is simply to move all aspects of construction to `main`, and to design the rest of the system assuming that all objects have been constructed and wired appropraitely.
+
+If this is done, flow of control will be easy to follow. `Main` builds objects necessary for the system then passes them to the application which uses them.
+
+Note: Check out how factories interrupt separation of main and how its tackled.
+
+##### Dependency Injection.
+A powerful mechanism for separating construction from use is Dependency Injection, the application of Inversion of Control (IoC) to dependency management.
+
+IoC moves secondary responsibilities from an object to other objects that are dedicated to the purpose, thereby supporting SRP.
+
+In the context of dependency management, an object shouldn't take the responsibility for instantiating dependencies itself. Instead, it should pass this responsibility to another 'authoritative' mechanism,
+ thereby inverting the control.
+Since the setup is a global concern, this authoritative mechanism will usually either be the 'main' routine or a special purpose container.
+
+#### Scaling Up.
+It is a myth that we can get systems right the first time.
+
+Instead, we should implement only today's stories, then refactor and expand the system to implement new stories tomorrow. This is the essence of iterative and incremental agility.
+
+#### Test Drive The System Architecture.
+It's not necessary to do a `'Big Design Up Front'` (BDUF). In fact BDUF is even harmful because it inhibits adapting to change, due to the psychological resistance to discarding prior effort and because of the way
+architecture choices influence subsequent thinking about the design.
+
+If software separates concerns effectively, it is economically feasible to make radical changes to it.
+
+This means we can start a software project with a 'naively simple' but nicely decoupled architecture, delivering working user stories quickly, then adding more infrastructure as we scale up.
+
+Definitely this doesn't mean we go into a project 'rudderless'. We should have some expectation of the general scope, goals, and schedule, as well as the general structure of the resulting system.
+
+#### Optimize Decision Making.
+Modularization and separation of concerns make decentralized management and decision making possible.
+
+Note that its best to postpone decisions until the last possible moment. This isn't lazy or irresponsible. A premature decision is a decision made with suboptimal knowledge.
+
+#### Use Standards Wisely, When They Add Demonstrable Value.
+`Standards make it easier to reuse ideas and components, recruit people with relevant experience, encapsulate good ideas, and wire components together. However, the process of creating standards can sometimes take
+too long for industry to wait, and some standards lose touch with the real needs of the adopters they are intended to serve.`
+
+#### Systems Need Domain Specific Languages.
+A good DSL minimizes the communication gap between a domain concept and the code that implements it.
+
+DSL's, when used effectively, raise the abstraction level above code idioms and design patterns. They allow the programmer to reveal the intent of the code at the appropriate level of abstraction.
