@@ -9,11 +9,6 @@ To spice it up I've set myself the 24-book challenge for this year.
 
 1. Half a Day `and other short stories.`
 
-[[](https://i0.wp.com/moranpublishers.com/wp-content/uploads/2023/08/HalfaDayandOtherStories-3.jpg?fit=250%2C367&ssl=1)]
+2. Astropysics For People In A Hurry by Neil DeGrasse Tyson.
 
-2.. Astropysics For People In A Hurry by Neil DeGrasse Tyson.
-
-[![Astrophysics For People In A Hurry](https://www.libertybooks.com/image/cache/catalog/9780393609394-640x996.jpg?q6)]
-
-Link: https://www.amazon.com/Astrophysics-People-Hurry-deGrasse-Tyson/dp/0393609391
 
