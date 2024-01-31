@@ -4,10 +4,14 @@ date: 2024-01-17T18:08:52+03:00
 
 ---
 
-I don't want to be bogged down just reading software books, that would be mind numbingly boring.
+I don't want to be bogged down just reading software books, that would be mind numbingly tedious.
 To spice it up I've set myself the 24-book challenge for this year.
 
-1. Astropysics For People In A Hurry by Neil DeGrasse Tyson.
+1. Half a Day `and other short stories.`
+
+[[](https://i0.wp.com/moranpublishers.com/wp-content/uploads/2023/08/HalfaDayandOtherStories-3.jpg?fit=250%2C367&ssl=1)]
+
+2.. Astropysics For People In A Hurry by Neil DeGrasse Tyson.
 
 [![Astrophysics For People In A Hurry](https://www.libertybooks.com/image/cache/catalog/9780393609394-640x996.jpg?q6)]
 
