@@ -16,6 +16,12 @@ They include:
 
 3. Build an interpreter and a compiler.
 
-4. Create a music recommender based on a set of ‘liked’ songs.
+4. Concurrency algorithms.
+
+     a. Producer-consumer
+
+     b. Dining philosophers
+
+     c. Readers-writers
 
 As I build I'll be documenting my progress on this site.
