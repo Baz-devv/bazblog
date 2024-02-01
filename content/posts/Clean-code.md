@@ -1,6 +1,6 @@
 ---
 title: "Clean Code"
-date: 2024-01-09T14:57:35+03:00
+date: 2022-01-09T14:57:35+03:00
 
 ---
 [![Clean code uncle bob](https://images-na.ssl-images-amazon.com/images/I/51E2055ZGUL._AC_UL210_SR210,210_.jpg)]
@@ -603,4 +603,8 @@ Stick to the rules layed out in this book such as meaningful names and small fun
 #### Minimal Classes And Methods.
 Each of the previous rules can be taken too far. In an effort to make classes smaller, we might create too many tiny classes which is what this rule is against. We need to keep our class and function counts low.
 
-Kep in mind this rule's hierarchy in priority. Last.
+Keep in mind this rule's hierarchy in priority. Last.
+
+## CHAPTER 13: CONCURRENCY.
+`Objects are abstractions of processing. Threads are abstractions of schedule.`
+
