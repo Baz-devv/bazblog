@@ -608,3 +608,108 @@ Keep in mind this rule's hierarchy in priority. Last.
 ## CHAPTER 13: CONCURRENCY.
 `Objects are abstractions of processing. Threads are abstractions of schedule.`
 
+Writing clean concurrent program is very hard. Its much easier to write code that executes in a single thread.
+
+#### Why Concurrency?
+Concurrency is a decoupling strategy. It helps decouple 'what' gets done from 'when' it gets done.
+
+In single-threaded applications 'what' and 'when' are so strongly coupled that the state of the entire application can often be determined by looking at the stack backtrace.
+
+Decoupling 'what' from 'when' can dramatically improve both the throughput and structures of an application. From a structural point of view the application looks like many little collaborating computers rather than
+one big main loop. This can make the system easier to understand and offers some powerful ways to separate concerns.
+
+Structure though is not the only motive for adopting concurrency. Some systems have response time and throughput constraints that require hand-coded solutions.
+
+#### Myths and Misconceptions.
+1. Concurrency always improves performance: It improves performance only when there is a lot of wait time that can be shared between multiple threads.
+
+2. Design does not change when writing concurrent programs.
+
+3. Understanding concurrency issues is not important when working with a container e.g web container.
+
+##### Balances:
+1. Concurrency incurs some overhead, both in performance as well as writing additional code.
+
+2. Correct concurrency is complex, even for simple problems.
+
+3. Concurrency often requires a fundamental change in design strategy.
+
+4. Concurrency bugs aren't always repeatable, so they are often ignored as one-offs instead of the true defects they are.
+
+#### Concurrency Defense Principles.
+##### 1. SRP.
+Remember SRP states a given component should have a single reason to change. Concurrency design is complex enough to be a reason to change in its own right and therefore deserves to be separated from the rest of the code
+
+Considerations before embedding concurrent code directly into production code:
+
+1. concurrency related code has its own life-cycle of development, change and tuning.
+
+2. concurrency related code has its own challenges which are different from and often more difficult than non-concurrent code.
+
+3. the number of ways in which miswritten concurrency based code can fail makes it challenging enough without adding the burden of surrounding aapplication code.
+
+Keep your concurrency related code separate from other code.
+
+##### 2. Limit The Scope Of Data.
+The more places shared data can get updated, the more likely:
+
+1. you will forget to protect one or more of those places.
+
+2. there will be duplication of effort required to make sure everything is effectively guarded.
+
+3. it will be difficult to determine the sources of failure.
+
+Take data encapsulation to heart; severely limit the access of any data that may be shared.
+
+##### 3. Use Copies Of Data.
+A good way to avoid shared data is to avoid sharing the data in the first place.
+
+##### 4. Threads Should Be As Independent As Possible.
+Consider writing your threaded code such that each thread exists in its own world, sharing no data with any other thread.
+
+#### Know Your Execution Models.
+The various execution models in concurrent programming are:
+
+1. Producer - consumer.
+
+2. Readers - writers.
+
+3. Dining philosophers.
+
+Most concurrent problems will be some variation of these 3 problems. As a challenge, study these algorithms and write solutions using them.
+
+#### Beware Dependencies Between Synchronized Methods.
+Dependencies between synchronized methods cause subtle bugs in concurrent code.
+
+Avoid using more than one method on a shared object. But, there will be times when you must use more than one method on a shared object, when this is the case, there are 3 ways to make the code correct:
+1. Client-based locking.
+
+2. Server-based locking.
+
+3. Adapted server.
+
+#### Keep Synchronized Sections Small.
+
+#### Writing Correct Shut-Down Code Is Hard.
+Writing a system that is meant to stay alive and run forever is different from writing something that works for a while then shuts down gracefully.
+
+Graceful shutdown can be hard to get correct. Common problems include 'deadlock' with threads waiting to continue that never comes.
+
+If you must write concurrent code that involves shutting down gracefully, expect to spend much of your time getting the shutdown to happen correctly.
+
+#### Testing Threaded Code.
+1. Treat spurious failures as candidate threading issues.
+
+2. Get your nonthreaded code working first.
+
+3. Make your threaded code pluggable.
+
+4. Make your threaded code tunable.
+
+5. Run with more threads than processors
+
+6. Run on different platforms.
+
+7. Instrument your code to try and force failures.
+
+## ends here, the subsequent chapters are practical ones that I replicated in a testing environment.
