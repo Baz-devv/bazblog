@@ -14,12 +14,11 @@ They include:
 
 2. Writing my own Docker-like container service.
 
-3. Build an interpreter and a compiler. Preferrably in Rust, but I'll have to start with the Bob Nystrom book.
+3. Build an interpreter and a compiler. Preferrably in Rust, but I'll have to start with the Bob Nystrom book. Reading material:
 
-reading material:
-a. Crafting interpreters *already in my software reading list.
+	a. Crafting interpreters *already in my software reading list.
 
-b. Rust interpreters: https://rust-hosted-langs.github.io/book/
+	b. Rust interpreters: https://rust-hosted-langs.github.io/book/
 
 4. Concurrency algorithms.
 
