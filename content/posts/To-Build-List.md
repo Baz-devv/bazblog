@@ -28,4 +28,6 @@ They include:
 
      c. Readers-writers
 
+5. Or if ever in short supply of projects, just use the ones provided here, they are really cool: https://app.codecrafters.io/tracks/rust
+
 As I build I'll be documenting my progress on this site.
