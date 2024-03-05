@@ -11,4 +11,4 @@ To spice it up I've set myself the 24-book challenge for this year.
 
 2. Astropysics For People In A Hurry by Neil DeGrasse Tyson.
 
-
+3. The Case Of The Man Who Died Laughing by Tarquin Hall.
