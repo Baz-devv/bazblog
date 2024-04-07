@@ -9,6 +9,8 @@ To spice it up I've set myself the 24-book challenge for this year.
 
 1. Half a Day `and other short stories.`
 
-2. Astropysics For People In A Hurry by Neil DeGrasse Tyson.
+2. Astropysics For People In A Hurry by (Neil DeGrasse Tyson).
 
-3. The Case Of The Man Who Died Laughing by Tarquin Hall.
+3. The Case Of The Man Who Died Laughing by (Tarquin Hall).
+
+4. Devil On The Cross by (Ngugi wa Thiong'o).
