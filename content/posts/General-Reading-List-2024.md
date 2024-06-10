@@ -14,3 +14,7 @@ To spice it up I've set myself the 24-book challenge for this year.
 3. The Case Of The Man Who Died Laughing by (Tarquin Hall).
 
 4. Devil On The Cross by (Ngugi wa Thiong'o).
+
+5. The Almanack of Naval Ravikant.
+
+6. **Lords of Poverty by (Graham Hancock).

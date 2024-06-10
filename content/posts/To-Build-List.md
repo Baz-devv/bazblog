@@ -10,7 +10,11 @@ Now, this list contains projects/challenges I find to be interesting and haven't
 
 They include:
 
-1. Writing an image compression algorithm.
+1. Build my own operating system(s):
+
+	a. First one will be a test OS to familiarize myself with the process (ZiggyOS).
+
+	b. My own OS that implements new features I deem fit.
 
 2. Writing my own Docker-like container service.
 
